@@ -22,16 +22,16 @@ let curr_track = document.createElement('audio');
 // Define the tracks that have to be played
 let track_list = [
   {
-    name: "HAWAYE",
-    artist: "IMRAN RAEENI",
-    image: "hawaye.jpg",
-    path: "hawaye.mp3"
-  },
-  {
     name: "KABHI TUMHE",
     artist: "IMRAN RAEENI",
     image: "kabhitumhe.jpg",
     path: "Kabhi Tumhe.mp3"
+  },
+  {
+    name: "HAWAYE",
+    artist: "IMRAN RAEENI",
+    image: "hawaye.jpg",
+    path: "hawaye.mp3"
   },
   {
     name: "GHAR CHALE",
