@@ -1,164 +1,120 @@
-*{
-	margin: 0;
-	padding: 0;
+body {
+  background-color: lightgreen;
+
+  /* Smoothly transition the background color */
+  transition: background-color .5s;
 }
 
-.main{
-    width: 100%;
-    height: 460px;
-    background-color: white;
-
+.player {
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.side
-{
- width: 20%;
-height: 460px;
-background-color: silver;
+.details {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 25px;
 }
 
-.contain{
-width: 381px;
-    height: 460px;
-    background-color: white;
-    position: absolute;
-    left: 185px;
-    top: 0px;
-    
-
+.track-art {
+  margin: 25px;
+  height: 250px;
+  width: 250px;
+  background-image: url("https://images.pexels.com/photos/262034/pexels-photo-262034.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  background-size: cover;
+  border-radius: 15%;
 }
 
-.contain p{
-  line-height: 78px;
-    margin-left: 19px;
-    font-family: "Sofia", sans-serif;
-    font-size: 27px;
-    font-weight: 1000;
-    position: absolute;
-    top: 47px;
+.now-playing {
+  font-size: 1rem;
 }
 
-
-.image{
-
-  width: 300px;
-    height: 381px;
-    background-color: gray;
-    position: absolute;
-    left: 590px;
-    top: 36px;
-
-
+.track-name {
+  font-size: 3rem;
 }
 
-
-
-li{
-    list-style: none;
-    line-height: 115px;
-    margin-left: 34px;
-
+.track-artist {
+  font-size: 1.5rem;
 }
 
-
-li a:link {
-  color: red;
-  text-decoration: none;
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
+.playpause-track, .prev-track, .next-track {
+  padding: 25px;
+  opacity: 0.8;
 
-li a:visited {
-  color: green;
+  /* Smoothly transition the opacity */
+  transition: opacity .2s;
 }
 
-
-li a:hover {
-  color: hotpink;
-  text-decoration: overline;
+.playpause-track:hover, .prev-track:hover, .next-track:hover {
+  opacity: 1.0;
 }
 
-
-li a:active {
-  color: blue;
+.slider_container {
+  width: 75%;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
-
-
-
-.quali{
-    width: 787px;
-    height: 460px;
-    background-color: white;
-    position: absolute;
-    left: 196px;
-    top: 0px;
-
+/* Modify the appearance of the slider */
+.seek_slider, .volume_slider {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 5px;
+  background: black;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
 }
 
-.quali_border{
-  width: 543px;
-    height: 348px;
-    background-color: green;
-    position: absolute;
-    left: 129px;
-    top: 50px;
-    border: 13px solid black;
+/* Modify the appearance of the slider thumb */
+.seek_slider::-webkit-slider-thumb, .volume_slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: white;
+  cursor: pointer;
+  border-radius: 50%;
 }
 
-.quali_border li{
-    line-height: 81px;
+.seek_slider:hover, .volume_slider:hover {
+  opacity: 1.0;
 }
 
-
-
-.skill{
-    width: 787px;
-    height: 460px;
-    background-color: white;
-    position: absolute;
-    left: 196px;
-    top: 0px;
-
+.seek_slider {
+  width: 60%;
 }
 
-.skill_border{
-  width: 543px;
-    height: 348px;
-    background-color: green;
-    position: absolute;
-    left: 129px;
-    top: 50px;
-    border: 13px solid black;
+.volume_slider {
+  width: 30%;
 }
 
-.skill_border li{
-    line-height: 81px;
+.current-time, .total-duration {
+  padding: 10px;
 }
 
-
-.about{
-    width: 787px;
-    height: 460px;
-   position: absolute;
-    left: 196px;
-    top: 0px;
-    background-image: url(imranbannercrop1.jpg);
-    
-
-
+i.fa-volume-down, i.fa-volume-up {
+  padding: 10px;
 }
 
-.about p{
-    position: absolute;
-    left: 55px;
-    top: 82px;
-    font-family: "Sofia", sans-serif;
-    font-size: 27px;
-    color:white;
-    line-height: 60px;
-
-   }
+i.fa-play-circle, i.fa-pause-circle, i.fa-step-forward, i.fa-step-backward {
+  cursor: pointer;
+}
 
 
 
